@@ -6,8 +6,8 @@
 
 <form action="" class="" method="post">
   {% csrf_token %}
-  <p>Are you sure you want to delete "{{ snack.title }}"?</p>
-  <input type="submit" value="OK">
+  <p class="alert alert-danger">Are you sure you want to delete "{{ snack.title }}"?</p>
+  <input type="submit" class="btn btn-danger" value="OK">
 </form>
 
 

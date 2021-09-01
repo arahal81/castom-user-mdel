@@ -9,8 +9,8 @@
     <h2>{{ snack.title }}</h2>
     <p>purchaser: {{ snack.purchaser }}</p>
     <p>description: {{ snack.description }}</p>
-    <a href="{% url 'snack_update' snack.pk %}" > Update Snack</a>
-<a href="{% url 'snack_delete' snack.pk %}"> Delete Snack</a>
+    <a href="{% url 'snack_update' snack.pk %}" class="btn btn-success"> Update Snack</a>
+<a href="{% url 'snack_delete' snack.pk %}" class="btn btn-danger"> Delete Snack</a>
   </div>
 
 {% endblock content %}
